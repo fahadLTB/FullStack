@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://fullstack-xqq7.onrender.com";
 
 function signup() {
     fetch(API + "/signup", {
