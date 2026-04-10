@@ -13,7 +13,7 @@ app.use(express.json());
 const SECRET = "mysecretkey";
 
 // Connect MongoDB
-mongoose.connect("YOUR_MONGODB_URL")
+mongoose.connect("mongodb+srv://fahadMongodb:A1B2C3D4@cluster0.dwf4rgu.mongodb.net/?appName=Cluster0")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
