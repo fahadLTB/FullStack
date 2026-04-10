@@ -8,7 +8,7 @@ const User = require("./models/User");
 
 const app = express();
 app.use(cors({
-    origin: "https://yourname.github.io"
+    origin: "https://fahadltb.github.io/FullStack/"
 }));
 app.use(express.json());
 
