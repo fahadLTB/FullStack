@@ -7,7 +7,9 @@ const jwt = require("jsonwebtoken");
 const User = require("./models/User");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://yourname.github.io"
+}));
 app.use(express.json());
 
 const SECRET = "mysecretkey";
