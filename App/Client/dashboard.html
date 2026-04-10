@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Your Profile</h2>
+<p id="data"></p>
+
+<script>
+const token = localStorage.getItem("token");
+
+fetch("http://localhost:5000/profile", {
+    headers: {
+        "Authorization": token
+    }
+})
+.then(res => res.json())
+.then(data => {
+    document.getElementById("data").innerText =
+        "Username: " + data.username + " | Phone: " + data.phone;
+});
+</script>
+
+</body>
+</html>
